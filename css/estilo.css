@@ -1,0 +1,127 @@
+/*Estrutura do site*/
+
+/*Zerar margem e padding padrão*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Helvetica, "Trebuchet MS", sans-serif; 
+	background: #fff url(../imagens/bg.png); /*fundo de toda a página*/
+	margin: 15px; /*espaçamento da margem*/
+}
+
+#container{
+	background: #ede9cc; /*cor fundo do container*/
+	margin: 0 auto; /*centraliza o container*/
+	min-width: 740px; /*tamanho minimo do container*/
+	max-width: 1180px;  /*tamanho maximo do container*/
+
+}
+
+#topo{
+	position: relative;
+	background: #dbcd87;
+	height: 15.4em; /*tamanho da letra proporcional*/
+	min-height: 250px; /*altura minima do topo*/
+}
+
+#area-logo{
+	position: absolute;
+	background: url(../imagens/topo-imagem-principal2.png) no-repeat;
+	width: 100%; /*largura*/
+	height: 250px; /*altura*/
+	top: 0; 
+	left: 0; /*posicionamento à esquerda*/
+	z-index: 1; /*sobreposição de imagem*/
+}
+
+.logo a{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 3; /*sobreposição da imagem*/
+	background: url(../imagens/logo.png) no-repeat;
+	width: 151px; /*largura da imagem*/
+	height: 66px; /*altura da imagem*/
+	text-indent: -900px; /*esconde o titulo*/
+}
+
+#area-menu{
+	position: absolute;
+	top: 0; 
+	right: 0; /*posicionamento à direita*/
+	background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+	width: 450px; /*largura*/
+	height: 250px; /*altura*/
+	z-index: 2; /*sobreposição de imagem*/
+}
+
+/*Formatação texto Menu*/ 
+#conteudo-menu{
+	margin-left: 90px; /*margem esquerda texto menu*/
+	margin-right: 15px; /*margem direita*/
+	padding-top: 15px; /*espaçamento superior*/
+}
+
+#menu-locais{
+	border-top: 1px solid #b5ab56; /*cor da borda superior*/
+	border-bottom: 1px solid #b5ab56; /*cor da borda inferior*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.7em;
+	color: #8b8448;
+}
+
+#menu-locais .locais{
+	float: left;
+	line-height: 2.1em; /*centralizar o texto*/
+	margin-left: 5px;
+	color: #8b8448;
+	
+}
+
+a {
+	text-decoration: none;
+}
+a.reserva{
+	text-transform: uppercase;/*letras MAIUSCULAS*/
+	background: #b5ab56; /*fundo botão reservas*/
+	color: #8b8448;
+	padding: 5px 10px;
+	float: right;
+}
+
+/*Barra de navegação Vertical*/
+
+#menu {
+	margin-top:15px ;
+}
+
+.depoimento{
+	width: 226px;
+	height: 164px;
+	float: right; /*flutuando a direita*/
+}
+
+ul {
+	list-style: none;
+
+}
+
+ul#navegacao {
+	float: left; /*flutuando a esquerda*/
+}
+
+ul#navegacao a {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding: 5px;
+	color:#6e672c;
+	line-height: 30px;
+}
+
+ul#navegacao a:hover{
+	background: #fdf6be;
+}
